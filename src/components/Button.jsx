@@ -1,11 +1,9 @@
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 
-const Button = {children} => {
-  return (
-    <div>Button</div>
-  )
+const Button = ({ children }) => {
+	return <div>Button</div>
 }
 
-Button.propTypes = { children: PropTypes.array.isRequired}
+Button.propTypes = { children: PropTypes.array.isRequired }
 
 export default Button
