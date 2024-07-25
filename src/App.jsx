@@ -1,14 +1,14 @@
-import { About, CTA, Footer, Hero, Navbar, Service, Testimonials } from "./components"
+import { About, Contact, Footer, Hero, Navbar, Service, Testimonials } from "./components"
 
 const App = () => {
 	return (
-		<main className="px-10 pt-20 overflow-hidden">
+		<main className='overflow-hidden bg-black text-white'>
 			<Navbar />
 			<Hero />
 			<About />
 			<Service />
 			<Testimonials />
-			<CTA />
+			<Contact />
 			<Footer />
 		</main>
 	)

@@ -4,10 +4,28 @@
 
 :root {
 	font-family: system-ui, sans-serif;
-	color-scheme: light dark;
+	color-scheme: light;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+section,
+header {
+	@apply px-12;
+}
+
+.hero {
+	letter-spacing: 1.5px;
+}
+
+.hero h1 {
+	word-spacing: 8px;
+}
+
+::-webkit-calendar-picker-indicator {
+	display: block;
+	width: 100%;
 }
