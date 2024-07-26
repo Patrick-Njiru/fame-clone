@@ -7,7 +7,7 @@ const Service = () => {
 			<SectionTitle
 				title='The power of our service'
 				description='Why choose fame'
-				otherStyles='text-white [&_h2]:text-black bg-red relative z-10'
+				otherStyles='[&_p]:text-white [&_h2]:text-black bg-red relative z-10'
 			/>
 			<div className='flex flex-wrap justify-center gap-10 mb-10 mt-20 relative z-10 md:flex-nowrap md:mb-80'>
 				<article className='w-20 md:w-44 h-52 text-2xl font-black relative border-l-2'>
