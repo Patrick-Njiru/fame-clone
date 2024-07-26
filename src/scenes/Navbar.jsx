@@ -24,11 +24,7 @@ const Navbar = () => {
         ${scrollPosition == 0 ? "bg-transparent pt-3 xl:pt-0" : "bg-black"} `}
 		>
 			<a href='#' className='block size-12 sm:size-24 mb-2'>
-				<img
-					src={logo}
-					className='object-cover'
-					alt='logo'
-				/>
+				<img src={logo} className='object-cover' alt='logo' />
 			</a>
 			{/* Desktop */}
 			<nav className='ms-60 w-1/2 gap-3 hidden justify-evenly bg-inherit [&_*]:font-medium [&_*]:text-sm xl:[&_*]:text-base lg:flex'>
@@ -50,6 +46,7 @@ const Navbar = () => {
           `}
 			>
 				<button
+					type='button'
 					className='bg-inherit space-y-0.5 me-6 absolute top-5 start-5 lg:hidden'
 					onClick={() => setOpenMenu(!openMenu)}
 				>
@@ -76,6 +73,7 @@ const Navbar = () => {
 
 			<div className='flex gap-1 w-fit bg-inherit relative'>
 				<button
+					type='button'
 					className='bg-inherit space-y-0.5 me-6 lg:hidden'
 					onClick={() => setOpenMenu(!openMenu)}
 				>
