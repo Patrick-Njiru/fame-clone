@@ -17,7 +17,7 @@ import PropTypes from "prop-types"
 // 	</button>
 // )
 
-const SimpleSlider = ({ children }) => {
+const SimpleSlider = ({ children, styles }) => {
 	const settings = {
 		dots: true,
 		infinite: true,
@@ -34,12 +34,12 @@ const SimpleSlider = ({ children }) => {
 	}
 
 	return (
-		<div className='h-96 [&_img]:h-[70vh] relative lg:size-1/2'>
+		<div className={`${styles || 'h-96 [&_img]:h-[70vh] relative lg:size-1/2"'}`}>
 			<Slider {...settings}>{children}</Slider>
 		</div>
 	)
 }
 
-SimpleSlider.propTypes = { children: PropTypes.any.isRequired }
+SimpleSlider.propTypes = { children: PropTypes.any.isRequired, styles: PropTypes.string }
 
 export default SimpleSlider

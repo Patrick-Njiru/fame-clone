@@ -1,4 +1,4 @@
-import { SectionTitle } from "../components"
+import { SectionTitle, SimpleSlider } from "../components"
 import Card from "../components/Card"
 
 const TESTIMONIALS = [
@@ -35,11 +35,16 @@ const Testimonials = () => {
 					to say!
 				</p>
 			</SectionTitle>
-			<div className='flex w-full justify-evenly mt-28 gap-6'>
+			<div className='hidden flex-wrap w-full justify-evenly mt-28 gap-6 lg:flex-nowrap md:flex'>
 				{TESTIMONIALS.map((testimonial) => (
 					<Card key={testimonial.id} {...testimonial} />
 				))}
 			</div>
+			<SimpleSlider styles='w-full mt-12 md:hidden'>
+				{TESTIMONIALS.map((testimonial) => (
+					<Card key={testimonial.id} {...testimonial} styles='hover:top-0' />
+				))}
+			</SimpleSlider>
 		</section>
 	)
 }
