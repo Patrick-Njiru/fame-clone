@@ -5,7 +5,7 @@ import { SiGmail } from "react-icons/si"
 const Footer = () => {
 	return (
 		<footer id='footer' className='pt-20 pb-12 font-medium space-y-12 bg-black'>
-			<div className='flex justify-between flex-nowrap gap-10 [&_article]:w-1/4'>
+			<div className='flex flex-col flex-wrap justify-between gap-y-16 gap-10 md:flex-row md:[&_article]:w-2/5 lg:flex-nowrap lg:gap-10 lg:[&_article]:w-1/4'>
 				{/* col 1 */}
 				<article className='space-y-6'>
 					<a href='#' className='block size-24'>
@@ -98,13 +98,13 @@ const Footer = () => {
 						<input
 							type='email'
 							name=''
-							className='bg-white bg-opacity-20 rounded-full p-2 ps-3 placeholder:font-light placeholder:text-sm'
+							className='bg-white bg-opacity-20 rounded-full w-full p-2 ps-3 placeholder:font-light placeholder:text-sm outline-none'
 							placeholder='Enter your email'
 						/>
 						<button
 							type='submit'
 							className='
-								absolute bg-orange-500 p-[10px] px-4 rounded-full font-semibold transition-all duration-300 ease-linear end-0  
+								absolute bg-orange-500 p-2 px-3 rounded-full font-semibold transition-all duration-300 ease-linear end-0  
 								-top-0.5 hover:-end-1 hover:bg-orange-600'
 						>
 							Subscribe
