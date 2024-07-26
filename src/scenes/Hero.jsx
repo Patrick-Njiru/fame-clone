@@ -4,6 +4,29 @@ import { BiCalendar, BiSearch } from "react-icons/bi"
 const Hero = () => {
 	const [pickUpDate, setPickUpDate] = useState("Pick-up Date")
 	const [dropOffDate, setDropOffDate] = useState("Drop-off Date")
+
+	const setDate = (e, type) => {
+		const hours24 = e.target.value.slice(11, 13)
+		const hours12 = hours24 > 12 ? (hours24 - 12).toString() : hours24
+
+		const time12 = {
+			"am/pm": hours24 >= 12 ? "pm" : "am",
+			time: hours12.length === 1 ? "0" + hours12 : hours12,
+		}
+
+		type == "pick-up"
+			? setPickUpDate(
+					`
+					${e.target.value.slice(0, 10)} @${time12["time"]}:${e.target.value.slice(14, 16)}${time12["am/pm"]}
+						` || "Pick-up Date"
+			  )
+			: setDropOffDate(
+					`
+					${e.target.value.slice(0, 10)} @${time12["time"]}:${e.target.value.slice(14, 16)}${time12["am/pm"]}
+					` || "Pick-up Date"
+			  )
+	}
+
 	return (
 		<section
 			className='h-svh bg-gray-600 pt-40 pb-12 hero flex flex-col justify-between'
@@ -61,10 +84,10 @@ const Hero = () => {
 						{pickUpDate} <BiCalendar />
 					</label>
 					<input
-						type='date'
+						type='datetime-local'
 						name='pick-up_date'
 						id='pick-up_date'
-						onChange={(e) => setPickUpDate(e.target.value || "Pick-up Date")}
+						onChange={(e) => setDate(e, "pick-up")}
 						className='appearance-none bg-transparent size-full opacity-0 absolute top-0'
 					/>
 				</div>
@@ -76,10 +99,10 @@ const Hero = () => {
 						{dropOffDate} <BiCalendar />
 					</label>
 					<input
-						type='date'
+						type='datetime-local'
 						name='drop-off_date'
 						id='drop-off_date'
-						onChange={(e) => setDropOffDate(e.target.value || "Drop-off Date")}
+						onChange={(e) => setDate(e, "drop-off")}
 						className='appearance-none bg-transparent size-full opacity-0 absolute top-0'
 					/>
 				</div>
@@ -88,8 +111,6 @@ const Hero = () => {
 					<BiSearch className=' size-8' />
 				</button>
 			</form>
-
-			
 		</section>
 	)
 }

@@ -1,4 +1,4 @@
-import { About, Contact, Footer, Hero, Navbar, Service, Testimonials } from "./components"
+import { About, Contact, Footer, Hero, Models, Navbar, Service, Testimonials } from "./scenes"
 
 const App = () => {
 	return (
@@ -6,6 +6,7 @@ const App = () => {
 			<Navbar />
 			<Hero />
 			<About />
+			<Models />
 			<Service />
 			<Testimonials />
 			<Contact />

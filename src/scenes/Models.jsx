@@ -1,5 +1,5 @@
 const Models = () => {
-	return <div>Models</div>
+	return <section>Models</section>
 }
 
 export default Models
