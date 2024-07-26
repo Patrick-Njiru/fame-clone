@@ -16,7 +16,6 @@ const Service = () => {
 			<SectionTitle
 				title='The power of our service'
 				description='Why choose fame'
-				centered={true}
 				otherStyles='text-white [&_h2]:text-black'
 			/>
 			<div className='flex justify-center gap-10 my-40'>
