@@ -29,8 +29,8 @@ const Hero = () => {
 
 	return (
 		<section className='h-screen pt-40 bg-transparent pb-12 hero flex flex-col justify-between relative overflow-hidden'>
-			<div className='space-y-5 bg-transparent'>
-				<h1 className='font-semibold text-2xl leading-loose w-1/2 justify-between md:text-3xl lg:text-4xl'>
+			<div className='space-y-5 bg-transparent hidden md:block'>
+				<h1 className='font-semibold text-2xl leading-loose w-4/5 lg:w-1/2 justify-between md:text-3xl lg:text-4xl'>
 					Welcome to FAME, Where Luxury Meets UAE&apos;s Roads!
 				</h1>
 				<p className='text-sm'>
@@ -39,7 +39,10 @@ const Hero = () => {
 			</div>
 			<form
 				onSubmit={(e) => e.preventDefault()}
-				className='flex justify-between gap-3 w-full [&_div]:w-[22%] [&_*]:outline-none'
+				className='
+					flex flex-wrap justify-evenly gap-3 gap-y-6 w-full [&_div]:w-full [&_*]:outline-none
+					[&_div]:border [&_div]:border-e-0 [&_div]:py-4 [&_div]:rounded-lg md:[&_div]:w-[45%] md:mt-12
+					lg:justify-between lg:[&_div]:w-[22%] lg:[&_div]:border-0 lg:[&_div]:border-b lg:[&_div]:rounded-none'
 			>
 				<div className='[&_*]:bg-transparent border-b pb-2 w-60'>
 					<select
@@ -98,8 +101,8 @@ const Hero = () => {
 					/>
 				</div>
 
-				<button type='submit' className=''>
-					<BiSearch className=' size-8' />
+				<button type='submit' className='md:w-40 lg:w-fit'>
+					<BiSearch className='size-8 mx-auto' />
 				</button>
 			</form>
 		</section>

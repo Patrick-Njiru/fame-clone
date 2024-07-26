@@ -35,14 +35,12 @@ const Navbar = () => {
 				/>
 			</a>
 			{/* Desktop */}
-			<nav className='ms-60 w-1/2 gap-3 hidden justify-evenly bg-inherit [&_*]:font-medium lg:flex'>
+			<nav className='ms-60 w-1/2 gap-3 hidden justify-evenly bg-inherit [&_*]:font-medium [&_*]:text-sm xl:[&_*]:text-base lg:flex'>
 				<a href='#'>HOME</a>
 				<a href='#about'>ABOUT US</a>
 				<a href='#services'>CATALOGUE</a>
 				<a href='#testimonials'>BLOG & NEWS</a>
 				<a href='#contact'>CONTACT US</a>
-				{/* TODO delete later */}
-				<a href='#footer'>DELETE LATER</a>
 			</nav>
 
 			{/* Mobile */}
@@ -63,12 +61,6 @@ const Navbar = () => {
 					<span id='line2' className='block h-1 w-4 bg-white'></span>
 					<span id='line3' className='block h-1 w-6 bg-white'></span>
 				</button>
-				{/* <button
-					className='absolute top-5 end-5 text-2xl'
-					onClick={() => setOpenMenu(!openMenu)}
-				>
-					X
-				</button> */}
 				<a className='hover:text-base hover:text-white' href='#'>
 					HOME
 				</a>
@@ -83,10 +75,6 @@ const Navbar = () => {
 				</a>
 				<a className='hover:text-base hover:text-white' href='#contact'>
 					CONTACT US
-				</a>
-				{/* TODO delete later */}
-				<a className='hover:text-base hover:text-white' href='#footer'>
-					DELETE LATER
 				</a>
 			</nav>
 
