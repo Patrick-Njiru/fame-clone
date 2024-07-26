@@ -53,36 +53,68 @@ const Footer = () => {
 					<h2 className='text-custom-orange font-bold text-xl md:text-2xl'>
 						Quick Links
 					</h2>
-					<div className='flex justify-between gap-3'>
+					<div
+						className='
+						flex justify-evenly gap-3 [&_*]:transition-all [&_*]:duration-300 [&_*]:ease-linear
+						[&_li]:flex [&_li]:items-center [&_li]:gap-2 [&_ul]:w-1/2'
+					>
 						<ul className='space-y-6'>
-							<li>Home</li>
-							<li>About</li>
-							<li>Blog</li>
-							<li>Contact</li>
+							<li className="group hover:text-custom-orange">
+								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
+								Home
+							</li>
+							<li className="group hover:text-custom-orange">
+								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
+								About
+							</li>
+							<li className="group hover:text-custom-orange">
+								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
+								Blog
+							</li>
+							<li className="group hover:text-custom-orange">
+								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
+								Contact
+							</li>
 						</ul>
 						<ul className='space-y-6'>
-							<li>Lamborghini</li>
-							<li>Mclaren</li>
-							<li>Mercedes-Benz</li>
-							<li>Ferrari</li>
+							<li className="group hover:text-custom-orange">
+								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
+								Lamborghini
+							</li>
+							<li className="group hover:text-custom-orange">
+								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
+								Mclaren
+							</li>
+							<li className="group hover:text-custom-orange">
+								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
+								Mercedes-Benz
+							</li>
+							<li className="group hover:text-custom-orange">
+								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
+								Ferrari
+							</li>
 						</ul>
 					</div>
 				</article>
 				{/* col 3 */}
 				<article className='space-y-6'>
 					<h2 className='text-custom-orange font-bold text-xl md:text-2xl'>Contact</h2>
-					<ul className='space-y-6'>
+					<ul className='space-y-6 [&_span]:transition-all [&_span]:duration-300 [&_span]:ease-linear'>
 						<li className='border-b border-gray-800 pb-3 flex gap-3'>
 							<FaLocationDot className='fill-custom-orange text-xl' />
-							<span>Dubai, United Arab Emirates</span>
+							<span className='hover:text-custom-orange'>
+								Dubai, United Arab Emirates
+							</span>
 						</li>
 						<li className='border-b border-gray-800 pb-3 flex gap-3'>
 							<SiGmail className='fill-custom-orange text-xl' />
-							<span>info@fameluxurycars.coom</span>
+							<span className='hover:text-custom-orange'>
+								info@fameluxurycars.coom
+							</span>
 						</li>
 						<li className='pb-3 flex gap-3'>
 							<FaPhone className='fill-custom-orange text-xl' />
-							<span>+9715 655 5352</span>
+							<span className='hover:text-custom-orange'>+9715 655 5352</span>
 						</li>
 					</ul>
 				</article>
