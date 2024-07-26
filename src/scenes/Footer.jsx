@@ -104,7 +104,7 @@ const Footer = () => {
 						<button
 							type='submit'
 							className='
-								absolute bg-orange-500 p-2 px-3 rounded-full font-semibold transition-all duration-300 ease-linear end-0  
+								absolute bg-orange-500 p-2 px-3 z-10 rounded-full font-semibold transition-all duration-300 ease-linear end-0  
 								-top-0.5 hover:-end-1 hover:bg-orange-600'
 						>
 							Subscribe

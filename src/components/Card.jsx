@@ -13,11 +13,9 @@ const Card = ({ photo, name, title, review, styles }) => {
 				<BiSolidQuoteAltRight className='fill-white text-5xl' />
 			</div>
 			<div className='flex justify-start gap-6 items-center'>
-				<img
-					src={photo || "https://via.placeholder.com/1024?text=reviewer"}
-					alt='reviewer pic'
-					className='size-16 rounded-full sm:size-20'
-				/>
+				<div className='size-16 rounded-full sm:size-20 overflow-hidden'>
+					<img src={photo} alt='reviewer pic' className='object-cover' />
+				</div>
 				<div className=''>
 					<p className='font-bold text-lg md:text-xl capitalize'>{name}</p>
 					<p className='text-lg md:text-xl capitalize'>{title}</p>

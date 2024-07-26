@@ -95,11 +95,13 @@ const Navbar = () => {
 			</div>
 			<a
 				href='#'
-				className={`fixed bottom-10 end-10 ${
-					scrollPosition > window.innerHeight ? "" : "hidden"
-				}`}
+				className={`
+					fixed bottom-10 end-10 bg-orange-500 rounded-full
+					transition-all duration-300 ease-linear hover:bg-black [&_*]:hover:fill-orange-500
+					${scrollPosition > window.innerHeight ? "" : "hidden"}
+				`}
 			>
-				<FaArrowUp className='text-xl' />
+				<FaArrowUp className='text-xl fill-black m-3' />
 			</a>
 		</header>
 	)
