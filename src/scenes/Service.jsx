@@ -30,15 +30,15 @@ const Service = () => {
 					<p className='ms-4'>Easy Booking Process</p>
 				</article>
 			</div>
-			<div className='relative w-full flex justify-center mx-auto -top-[80vh]'>
+			<div className='relative w-full flex justify-center mx-auto -top-40 md:-top-[70vh]'>
 				<img
-					src='/src/assets/ferrari-bg.webp'
+					src='/src/assets/ferrari-bg-1.webp'
 					alt='car'
-					className='absolute -top-10 hidden md:inline'
+					className='absolute -end-20 hidden sm:inline'
 				/>
 			</div>
 
-			<div className='flex flex-wrap justify-center gap-12 z-10 md:mt-28 md:justify-end md:me-16 md:flex-nowrap lg:mt-40'>
+			<div className='flex flex-wrap justify-center gap-12 z-10 sm:mt-20 md:mt-0 md:justify-end md:me-16 md:flex-nowrap lg:mt-40'>
 				<article className='w-20 md:w-52 h-24 text-2xl font-black relative border-l-2 flex items-end top-16'>
 					<span className='block size-2 bg-white rounded-full absolute -start-[5px] bottom-0'></span>
 					<span className='block size-5 bg-white rounded-full absolute top-0 -start-[10px]'></span>
