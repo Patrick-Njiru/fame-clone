@@ -56,40 +56,40 @@ const Footer = () => {
 					<div
 						className='
 						flex justify-evenly gap-3 [&_*]:transition-all [&_*]:duration-300 [&_*]:ease-linear
-						[&_li]:flex [&_li]:items-center [&_li]:gap-2 [&_ul]:w-1/2'
+						[&_li]:flex [&_li]:items-center [&_li]:gap-2 [&_li]:w-fit [&_ul]:w-1/2'
 					>
 						<ul className='space-y-6'>
-							<li className="group hover:text-custom-orange">
+							<li className='group hover:text-custom-orange'>
 								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
 								Home
 							</li>
-							<li className="group hover:text-custom-orange">
+							<li className='group hover:text-custom-orange'>
 								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
 								About
 							</li>
-							<li className="group hover:text-custom-orange">
+							<li className='group hover:text-custom-orange'>
 								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
 								Blog
 							</li>
-							<li className="group hover:text-custom-orange">
+							<li className='group hover:text-custom-orange'>
 								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
 								Contact
 							</li>
 						</ul>
 						<ul className='space-y-6'>
-							<li className="group hover:text-custom-orange">
+							<li className='group hover:text-custom-orange'>
 								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
 								Lamborghini
 							</li>
-							<li className="group hover:text-custom-orange">
+							<li className='group hover:text-custom-orange'>
 								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
 								Mclaren
 							</li>
-							<li className="group hover:text-custom-orange">
+							<li className='group hover:text-custom-orange'>
 								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
 								Mercedes-Benz
 							</li>
-							<li className="group hover:text-custom-orange">
+							<li className='group hover:text-custom-orange'>
 								<span className='inline-block h-1 w-0 bg-custom-orange rounded-lg group-hover:w-3'></span>
 								Ferrari
 							</li>
