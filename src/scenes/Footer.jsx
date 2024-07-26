@@ -37,7 +37,7 @@ const Footer = () => {
 								rounded-full size-8 flex items-center justify-center'
 							title='instagram'
 						>
-							<BiLogoInstagram />
+							<BiLogoInstagram className="fill-black" />
 						</a>
 						<a
 							href='#tiktok'
