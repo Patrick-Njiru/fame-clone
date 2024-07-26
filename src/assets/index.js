@@ -10,6 +10,7 @@ import mclarenLogo from "./mclaren-logo.webp"
 import mclaren from "./mclaren.webp"
 import logo from "./official-fame-logo.webp"
 import bgVideo from "./supercars.mp4"
+import videoFallback from "./video-fallback.webp"
 
 export {
 	benzLogo,
@@ -24,4 +25,5 @@ export {
 	mclaren,
 	logo,
 	bgVideo,
+	videoFallback,
 }
