@@ -5,22 +5,22 @@ const TESTIMONIALS = [
 	{
 		id: 1,
 		photo: "https://randomuser.me/api/portraits/men/11.jpg",
-		title: "title",
-		name: "name",
+		name: "John Doe",
+		title: "Businessman",
 		review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit aperiam optio exercitationem rem maxime doloremque consequuntur animi, earum amet quasi voluptatibus. Impedit adipisci officiis ab qui doloribus id expedita.",
 	},
 	{
 		id: 2,
 		photo: "https://randomuser.me/api/portraits/women/23.jpg",
-		title: "title",
-		name: "name",
+		name: "Jane Doe",
+		title: "Tourist",
 		review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit aperiam optio exercitationem rem maxime doloremque consequuntur animi, earum amet quasi voluptatibus. Impedit adipisci officiis ab qui doloribus id expedita.",
 	},
 	{
 		id: 3,
 		photo: "https://randomuser.me/api/portraits/men/37.jpg",
-		title: "title",
-		name: "name",
+		name: "Joshua Esteban",
+		title: "Tourist",
 		review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit aperiam optio exercitationem rem maxime doloremque consequuntur animi, earum amet quasi voluptatibus. Impedit adipisci officiis ab qui doloribus id expedita.",
 	},
 ]
