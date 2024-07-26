@@ -1,5 +1,5 @@
+import { contactsBg } from "../assets"
 import { Button } from "../components"
-import contactBg from "../assets/contact-bg.webp"
 
 const Contact = () => {
 	return (
@@ -7,7 +7,7 @@ const Contact = () => {
 			id='contact'
 			className='py-40 bg-black bg-opacity-85'
 			style={{
-				backgroundImage: `url(${contactBg})`,
+				backgroundImage: `url(${contactsBg})`,
 				backgroundRepeat: "no-repeat",
 				backgroundSize: "cover",
 				backgroundBlendMode: "color-dodge",

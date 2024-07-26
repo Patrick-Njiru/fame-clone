@@ -1,6 +1,7 @@
 import { BiLogoFacebook, BiLogoInstagram, BiLogoTiktok } from "react-icons/bi"
 import { FaLocationDot, FaPhone } from "react-icons/fa6"
 import { SiGmail } from "react-icons/si"
+import { logo } from "../assets"
 
 const Footer = () => {
 	return (
@@ -9,11 +10,7 @@ const Footer = () => {
 				{/* col 1 */}
 				<article className='space-y-6'>
 					<a href='#' className='block size-24'>
-						<img
-							src='/src/assets/official-fame-logo.webp'
-							alt='logo'
-							className='object-cover'
-						/>
+						<img src={logo} alt='logo' className='object-cover' />
 					</a>
 					<p>
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quae

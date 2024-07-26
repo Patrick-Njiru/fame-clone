@@ -1,3 +1,4 @@
+import { ferrariBg } from "../assets"
 import { SectionTitle } from "../components"
 
 const Service = () => {
@@ -31,11 +32,7 @@ const Service = () => {
 				</article>
 			</div>
 			<div className='relative w-full flex justify-center mx-auto -top-40 md:-top-[70vh]'>
-				<img
-					src='/src/assets/ferrari-bg-1.webp'
-					alt='car'
-					className='absolute -end-20 hidden sm:inline'
-				/>
+				<img src={ferrariBg} alt='car' className='absolute -end-20 hidden sm:inline' />
 			</div>
 
 			<div className='flex flex-wrap justify-center gap-12 z-10 sm:mt-20 md:mt-0 md:justify-end md:me-16 md:flex-nowrap lg:mt-40'>

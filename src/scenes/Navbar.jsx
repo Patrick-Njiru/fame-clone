@@ -1,22 +1,18 @@
 import { useEffect, useState } from "react"
 import { FaArrowUp, FaCartArrowDown } from "react-icons/fa"
+import { logo } from "../assets"
 
 const Navbar = () => {
 	const [scrollPosition, setScrollPosition] = useState(0)
-	const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 	const [openMenu, setOpenMenu] = useState(false)
 
 	useEffect(() => {
 		const handleScroll = () => setScrollPosition(window.scrollY)
 
-		const handleResize = () => setScreenWidth(window.innerWidth)
-
 		window.addEventListener("scroll", handleScroll)
-		window.addEventListener("resize", handleResize)
 
 		return () => {
 			window.removeEventListener("scroll", handleScroll)
-			window.removeEventListener("resize", handleResize)
 		}
 	}, [])
 
@@ -29,7 +25,7 @@ const Navbar = () => {
 		>
 			<a href='#' className='block size-12 sm:size-24 mb-2'>
 				<img
-					src='/src/assets/official-fame-logo.webp'
+					src={logo}
 					className='object-cover'
 					alt='logo'
 				/>

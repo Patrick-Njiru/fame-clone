@@ -1,4 +1,5 @@
 import { About, Contact, Footer, Hero, Navbar, Service, Testimonials } from "./scenes"
+import { bgVideo } from "./assets"
 
 const App = () => {
 	return (
@@ -10,7 +11,7 @@ const App = () => {
 				muted
 				preload='auto'
 			>
-				<source src='/src/assets/supercars.mp4' type='video/mp4' />
+				<source src={bgVideo} type='video/mp4' />
 				Your browser doesn&apos;t support the video tag
 			</video>
 			<Navbar />

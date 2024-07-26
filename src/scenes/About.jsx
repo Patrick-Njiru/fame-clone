@@ -1,15 +1,17 @@
+import {
+	benz,
+	benzLogo,
+	ferrari,
+	ferrariLogo,
+	lambo,
+	lamboLogo,
+	mclaren,
+	mclarenLogo,
+} from "../assets"
 import { Button, SectionTitle, SimpleSlider } from "../components"
-import lambo from "../assets/lambo.webp"
-import ferrari from "../assets/ferrari.webp"
-import benz from "../assets/benz.webp"
-import mclaren from "../assets/mclaren.webp"
-import lamboLogo from "../assets/lambo-logo.webp"
-import ferrariLogo from "../assets/ferrari-logo.webp"
-import benzLogo from "../assets/benz-logo.webp"
-import mcLarenLogo from "../assets/mclaren-logo.webp"
 
 const cars = [lambo, ferrari, benz, mclaren]
-const logos = [lamboLogo, benzLogo, mcLarenLogo, ferrariLogo]
+const logos = [lamboLogo, benzLogo, mclarenLogo, ferrariLogo]
 
 const About = () => {
 	return (
@@ -40,7 +42,12 @@ const About = () => {
 
 			<section className='flex flex-wrap justify-between gap-6 bg-inherit pt-40'>
 				{logos.map((logo, id) => (
-					<img key={id} src={logo} alt='Lamborghini logo' className='h-12 rounded-full sm:h-20 lg:h-28' />
+					<img
+						key={id}
+						src={logo}
+						alt='Lamborghini logo'
+						className='h-12 rounded-full sm:h-20 lg:h-28'
+					/>
 				))}
 			</section>
 		</section>
