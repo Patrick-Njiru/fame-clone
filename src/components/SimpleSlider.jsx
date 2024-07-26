@@ -34,7 +34,7 @@ const SimpleSlider = ({ children }) => {
 	}
 
 	return (
-		<div className='size-1/2 h-96 [&_img]:h-[70vh] relative'>
+		<div className='h-96 [&_img]:h-[70vh] relative lg:size-1/2'>
 			<Slider {...settings}>{children}</Slider>
 		</div>
 	)

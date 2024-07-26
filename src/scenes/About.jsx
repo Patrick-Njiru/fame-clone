@@ -14,8 +14,8 @@ const logos = [lamboLogo, benzLogo, mcLarenLogo, ferrariLogo]
 const About = () => {
 	return (
 		<section id='about' className='py-40 bg-black'>
-			<div className='flex justify-between gap-20'>
-				<div className='flex flex-col justify-between space-y-10 w-1/2'>
+			<div className='flex flex-col justify-between gap-20 lg:flex-row'>
+				<div className='flex flex-col justify-between space-y-10 lg:w-1/2'>
 					<SectionTitle
 						title='Select a car'
 						description='Drive in style, luxury, & comfort in dubai'
@@ -38,9 +38,9 @@ const About = () => {
 				</SimpleSlider>
 			</div>
 
-			<section className='flex justify-between bg-inherit pt-40'>
+			<section className='flex flex-wrap justify-between gap-6 bg-inherit pt-40'>
 				{logos.map((logo, id) => (
-					<img key={id} src={logo} alt='Lamborghini logo' className='h-28 rounded-full' />
+					<img key={id} src={logo} alt='Lamborghini logo' className='h-12 rounded-full sm:h-20 lg:h-28' />
 				))}
 			</section>
 		</section>

@@ -4,8 +4,8 @@ const Button = ({ children }) => {
 	return (
 		<button
 			className='
-				w-fit uppercase bg-orange-500 text-center py-3 px-6 rounded-sm font-medium border border-orange-500
-				transition-all duration-300 ease-linear relative top-0 hover:-top-3 hover:bg-transparent'
+				w-fit uppercase bg-orange-500 text-center py-2 px-4 rounded-sm border border-orange-500
+				transition-all duration-300 ease-linear relative top-0 text-sm hover:-top-3 hover:bg-transparent md:text-base md:py-3 md:px-6 md:font-medium'
 		>
 			{children}
 		</button>

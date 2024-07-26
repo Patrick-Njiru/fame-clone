@@ -13,6 +13,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+p, a, span {
+	@apply text-sm;
+}
+
 header,
 section,
 footer {
@@ -49,5 +53,12 @@ footer {
 	section,
 	footer {
 		@apply px-12;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	p,
+	a {
+		@apply text-base;
 	}
 }

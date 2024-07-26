@@ -41,8 +41,8 @@ const Hero = () => {
 				onSubmit={(e) => e.preventDefault()}
 				className='
 					flex flex-wrap justify-evenly gap-3 gap-y-6 w-full [&_div]:w-full [&_*]:outline-none
-					[&_div]:border [&_div]:border-e-0 [&_div]:py-4 [&_div]:rounded-lg md:[&_div]:w-[45%] md:mt-12
-					lg:justify-between lg:[&_div]:w-[22%] lg:[&_div]:border-0 lg:[&_div]:border-b lg:[&_div]:rounded-none'
+					[&_div]:border [&_div]:border-e-0 [&_div]:py-4 [&_div]:rounded-lg [&_div]:ps-2 md:[&_div]:w-[45%] md:mt-12
+					lg:justify-between lg:[&_div]:w-[22%] lg:[&_div]:border-0 lg:[&_div]:ps-0 lg:[&_div]:border-b lg:[&_div]:rounded-none'
 			>
 				<div className='[&_*]:bg-transparent border-b pb-2 w-60'>
 					<select
