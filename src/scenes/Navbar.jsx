@@ -132,8 +132,8 @@ const Navbar = () => {
 
 			<article
 				className={`
-					transition-all duration-300 ease-in fixed end-0 z-40 top-8 bottom-0  w-60 bg-white 
-					flex justify-center items-center	${openCart ? "" : "opacity-0 w-0"}
+					transition-all duration-300 ease-in fixed end-0 z-40 top-8 bottom-0   bg-white 
+					flex justify-center items-center	${openCart ? "w-60 opacity-100" : "opacity-0 w-0"}
 				`}
 			>
 				<button
