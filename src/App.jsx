@@ -1,4 +1,4 @@
-import { About, Contact, Footer, Hero, Models, Navbar, Service, Testimonials } from "./scenes"
+import { About, Contact, Footer, Hero, Navbar, Service, Testimonials } from "./scenes"
 
 const App = () => {
 	return (
