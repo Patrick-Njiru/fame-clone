@@ -5,6 +5,7 @@ import { logo } from "../assets"
 const Navbar = () => {
 	const [scrollPosition, setScrollPosition] = useState(0)
 	const [openMenu, setOpenMenu] = useState(false)
+	const [openCart, setOpenCart] = useState(false)
 
 	useEffect(() => {
 		const handleScroll = () => setScrollPosition(window.scrollY)
@@ -32,11 +33,36 @@ const Navbar = () => {
 					ms-60 w-1/2 gap-3 hidden justify-evenly bg-inherit 
 					[&_*]:font-medium [&_*]:text-sm lg:flex xl:[&_*]:text-base'
 			>
-				<a className="transition-all duration-300 ease-linear hover:border-b hover:text-custom-orange" href='#'>HOME</a>
-				<a className="transition-all duration-300 ease-linear hover:border-b hover:text-custom-orange" href='#about'>ABOUT US</a>
-				<a className="transition-all duration-300 ease-linear hover:border-b hover:text-custom-orange" href='#services'>CATALOGUE</a>
-				<a className="transition-all duration-300 ease-linear hover:border-b hover:text-custom-orange" href='#testimonials'>BLOG & NEWS</a>
-				<a className="transition-all duration-300 ease-linear hover:border-b hover:text-custom-orange" href='#contact'>CONTACT US</a>
+				<a
+					className='transition-all duration-300 ease-linear hover:border-b hover:text-custom-orange'
+					href='#'
+				>
+					HOME
+				</a>
+				<a
+					className='transition-all duration-300 ease-linear hover:border-b hover:text-custom-orange'
+					href='#about'
+				>
+					ABOUT US
+				</a>
+				<a
+					className='transition-all duration-300 ease-linear hover:border-b hover:text-custom-orange'
+					href='#services'
+				>
+					CATALOGUE
+				</a>
+				<a
+					className='transition-all duration-300 ease-linear hover:border-b hover:text-custom-orange'
+					href='#testimonials'
+				>
+					BLOG & NEWS
+				</a>
+				<a
+					className='transition-all duration-300 ease-linear hover:border-b hover:text-custom-orange'
+					href='#contact'
+				>
+					CONTACT US
+				</a>
 			</nav>
 
 			{/* Mobile */}
@@ -86,10 +112,12 @@ const Navbar = () => {
 					<span id='line3' className='block h-1 w-6 bg-white'></span>
 				</button>
 				<span>$0.00</span>
-				<FaCartArrowDown className='size-5' />
-				<span className='text-sm -block size-4 flex justify-center items-center bg-red-500 rounded-full absolute -end-1 -top-2'>
-					0
-				</span>
+				<div className='cursor-pointer' onClick={() => setOpenCart(!openCart)}>
+					<FaCartArrowDown className='size-5' />
+					<span className='text-sm -block size-4 flex justify-center items-center bg-red-500 rounded-full absolute -end-1 -top-2'>
+						0
+					</span>
+				</div>
 			</div>
 			<a
 				href='#'
@@ -101,6 +129,24 @@ const Navbar = () => {
 			>
 				<FaArrowUp className='text-xl fill-black m-3' />
 			</a>
+
+			<article
+				className={`
+					transition-all duration-300 ease-in fixed end-0 z-40 top-8 bottom-0  w-60 bg-white 
+					flex justify-center items-center	${openCart ? "" : "opacity-0 w-0"}
+				`}
+			>
+				<button
+					type='button'
+					className=' absolute top-0 start-0 text-black text-xl m-3 hover:text-custom-orange'
+					onClick={() => setOpenCart(!openCart)}
+				>
+					X
+				</button>
+				<p className='text-black text-center my-6 w-5/6'>
+					There are currently no items in the cart
+				</p>
+			</article>
 		</header>
 	)
 }

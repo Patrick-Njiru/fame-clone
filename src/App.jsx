@@ -18,6 +18,7 @@ const App = () => {
 					src={videoFallback}
 					alt='Your browser does not support the video tag.'
 					className='absolute size-full h-[130vh] -top-28 start-0 -z-30 object-cover'
+					loading='eager'
 				/>
 			</div>
 			<Navbar />
