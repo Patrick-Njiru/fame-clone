@@ -1,15 +1,17 @@
 import { Button } from "../components"
+import contactBg from "../assets/contact-bg.webp"
 
 const Contact = () => {
 	return (
 		<section
 			id='contact'
-			className='py-40 bg-zinc-800'
+			className='py-40 bg-black bg-opacity-85'
 			style={{
-				// backgroundImage: "url(https://via.placeholder.com/1024?text=More+Cars)",
-				// backgroundRepeat: "no-repeat",
-				// backgroundSize: "cover",
-				// backgroundBlendMode: "overlay",
+				backgroundImage: `url(${contactBg})`,
+				backgroundRepeat: "no-repeat",
+				backgroundSize: "cover",
+				backgroundBlendMode: 'color-dodge',
+				backgroundPosition: 'center center',
 			}}
 		>
 			<div className='space-y-6 text-center w-4/5 mx-auto'>

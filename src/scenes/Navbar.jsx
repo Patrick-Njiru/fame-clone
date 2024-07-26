@@ -23,19 +23,14 @@ const Navbar = () => {
 	return (
 		<header
 			className={`
-        flex justify-between items-center w-full fixed start-0 top-0 z-10
+        flex justify-between items-center w-full fixed start-0 top-0 z-20
 				transition-colors duration-100 ease-linear
         ${scrollPosition == 0 ? "bg-transparent pt-3 xl:pt-0" : "bg-black"} `}
 		>
-			<a href='#'>
+			<a href='#' className='block size-24 mb-2'>
 				<img
-					src={`${
-						scrollPosition == 0
-							? screenWidth < 1024
-								? "https://fakeimg.pl/25x25"
-								: "https://fakeimg.pl/80x80"
-							: "https://fakeimg.pl/80x80"
-					}`}
+					src='/src/assets/official-fame-logo.webp'
+					className='object-cover'
 					alt='logo'
 				/>
 			</a>
@@ -95,7 +90,7 @@ const Navbar = () => {
 					scrollPosition > window.innerHeight ? "" : "hidden"
 				}`}
 			>
-				<FaArrowUp />
+				<FaArrowUp className='text-xl' />
 			</a>
 		</header>
 	)

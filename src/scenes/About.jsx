@@ -1,8 +1,19 @@
-import { Button, Models, SectionTitle, SimpleSlider } from "../components"
+import { Button, SectionTitle, SimpleSlider } from "../components"
+import lambo from "../assets/lambo.webp"
+import ferrari from "../assets/ferrari.webp"
+import benz from "../assets/benz.webp"
+import mclaren from "../assets/mclaren.webp"
+import lamboLogo from "../assets/lambo-logo.webp"
+import ferrariLogo from "../assets/ferrari-logo.webp"
+import benzLogo from "../assets/benz-logo.webp"
+import mcLarenLogo from "../assets/mclaren-logo.webp"
+
+const cars = [lambo, ferrari, benz, mclaren]
+const logos = [lamboLogo, benzLogo, mcLarenLogo, ferrariLogo]
 
 const About = () => {
 	return (
-		<section id='about' className='my-40'>
+		<section id='about' className='py-40 bg-black'>
 			<div className='flex justify-between gap-20'>
 				<div className='flex flex-col justify-between space-y-10 w-1/2'>
 					<SectionTitle
@@ -21,30 +32,17 @@ const About = () => {
 				</div>
 
 				<SimpleSlider>
-					<img
-						src='https://via.placeholder.com/1024?text=Slider+1'
-						alt='Slide 1'
-						className='object-cover opacity-25'
-					/>
-					<img
-						src='https://via.placeholder.com/1024?text=Slider+2'
-						alt='Slide 2'
-						className='object-cover opacity-50'
-					/>
-					<img
-						src='https://via.placeholder.com/1024?text=Slider+3'
-						alt='Slide 3'
-						className='object-cover opacity-75'
-					/>
-					<img
-						src='https://via.placeholder.com/1024?text=Slider+4'
-						alt='Slide 4'
-						className='object-cover'
-					/>
+					{cars.map((car, id) => (
+						<img key={id} src={car} alt='Slide 1' className='object-cover' />
+					))}
 				</SimpleSlider>
 			</div>
 
-			<Models />
+			<section className='flex justify-between bg-inherit pt-40'>
+				{logos.map((logo, id) => (
+					<img key={id} src={logo} alt='Lamborghini logo' className='h-28 rounded-full' />
+				))}
+			</section>
 		</section>
 	)
 }

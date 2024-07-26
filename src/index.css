@@ -13,8 +13,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+header,
 section,
-header {
+footer {
 	@apply px-12;
 }
 
@@ -32,15 +33,13 @@ header {
 }
 
 .slick-dots {
-	@apply absolute bottom-0 bg-black bg-opacity-70 h-10	
+	@apply absolute bottom-0 bg-black bg-opacity-70 h-10;
 }
 
 .slick-dots li button::before {
-	@apply text-lg text-white
+	@apply text-lg text-white;
 }
 
 .slick-dots li.slick-active button::before {
-	@apply text-orange-500
+	@apply text-orange-500;
 }
-
-

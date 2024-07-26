@@ -28,17 +28,8 @@ const Hero = () => {
 	}
 
 	return (
-		<section
-			className='h-svh bg-gray-600 pt-40 pb-12 hero flex flex-col justify-between'
-			style={
-				{
-					// backgroundImage: "url(https://fakeimg.pl/1024x1024)",
-					// backgroundRepeat: "no-repeat",
-					// backgroundSize: "cover",
-				}
-			}
-		>
-			<div className='space-y-5'>
+		<section className='h-screen pt-40 bg-transparent pb-12 hero flex flex-col justify-between relative overflow-hidden'>
+			<div className='space-y-5 bg-transparent'>
 				<h1 className='font-semibold text-2xl leading-loose w-1/2 justify-between md:text-3xl lg:text-4xl'>
 					Welcome to FAME, Where Luxury Meets UAE&apos;s Roads!
 				</h1>
