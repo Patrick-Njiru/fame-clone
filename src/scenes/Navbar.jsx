@@ -114,7 +114,7 @@ const Navbar = () => {
 				<span>$0.00</span>
 				<div className='cursor-pointer' onClick={() => setOpenCart(!openCart)}>
 					<FaCartArrowDown className='size-5' />
-					<span className='text-sm -block size-4 flex justify-center items-center bg-red-500 rounded-full absolute -end-1 -top-2'>
+					<span className='text-sm -block size-4 flex justify-center items-center bg-custom-orange rounded-full absolute -end-1 -top-2'>
 						0
 					</span>
 				</div>
