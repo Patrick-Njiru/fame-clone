@@ -27,12 +27,16 @@ const Navbar = () => {
 				<img src={logo} className='object-cover' alt='logo' />
 			</a>
 			{/* Desktop */}
-			<nav className='ms-60 w-1/2 gap-3 hidden justify-evenly bg-inherit [&_*]:font-medium [&_*]:text-sm xl:[&_*]:text-base lg:flex'>
-				<a href='#'>HOME</a>
-				<a href='#about'>ABOUT US</a>
-				<a href='#services'>CATALOGUE</a>
-				<a href='#testimonials'>BLOG & NEWS</a>
-				<a href='#contact'>CONTACT US</a>
+			<nav
+				className='
+					ms-60 w-1/2 gap-3 hidden justify-evenly bg-inherit 
+					[&_*]:font-medium [&_*]:text-sm lg:flex xl:[&_*]:text-base'
+			>
+				<a className="transition-all duration-300 ease-linear hover:border-b hover:text-custom-orange" href='#'>HOME</a>
+				<a className="transition-all duration-300 ease-linear hover:border-b hover:text-custom-orange" href='#about'>ABOUT US</a>
+				<a className="transition-all duration-300 ease-linear hover:border-b hover:text-custom-orange" href='#services'>CATALOGUE</a>
+				<a className="transition-all duration-300 ease-linear hover:border-b hover:text-custom-orange" href='#testimonials'>BLOG & NEWS</a>
+				<a className="transition-all duration-300 ease-linear hover:border-b hover:text-custom-orange" href='#contact'>CONTACT US</a>
 			</nav>
 
 			{/* Mobile */}
