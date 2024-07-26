@@ -4,7 +4,7 @@ const SectionTitle = ({ title, description, centered = true, otherStyles, childr
 	return (
 		<div
 			className={`
-				space-y-4 text-orange-400 uppercase 
+				space-y-4 text-custom-orange uppercase 
 				${centered && "text-center"} ${otherStyles}
 			`}
 		>

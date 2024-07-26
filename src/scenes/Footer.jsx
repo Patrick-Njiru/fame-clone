@@ -50,7 +50,9 @@ const Footer = () => {
 				</article>
 				{/* col 2 */}
 				<article className='space-y-6'>
-					<h2 className='text-orange-500 font-bold text-xl md:text-2xl'>Quick Links</h2>
+					<h2 className='text-custom-orange font-bold text-xl md:text-2xl'>
+						Quick Links
+					</h2>
 					<div className='flex justify-between gap-3'>
 						<ul className='space-y-6'>
 							<li>Home</li>
@@ -68,25 +70,25 @@ const Footer = () => {
 				</article>
 				{/* col 3 */}
 				<article className='space-y-6'>
-					<h2 className='text-orange-500 font-bold text-xl md:text-2xl'>Contact</h2>
+					<h2 className='text-custom-orange font-bold text-xl md:text-2xl'>Contact</h2>
 					<ul className='space-y-6'>
 						<li className='border-b border-gray-800 pb-3 flex gap-3'>
-							<FaLocationDot className='fill-orange-500 text-xl' />
+							<FaLocationDot className='fill-custom-orange text-xl' />
 							<span>Dubai, United Arab Emirates</span>
 						</li>
 						<li className='border-b border-gray-800 pb-3 flex gap-3'>
-							<SiGmail className='fill-orange-500 text-xl' />
+							<SiGmail className='fill-custom-orange text-xl' />
 							<span>info@fameluxurycars.coom</span>
 						</li>
 						<li className='pb-3 flex gap-3'>
-							<FaPhone className='fill-orange-500 text-xl' />
+							<FaPhone className='fill-custom-orange text-xl' />
 							<span>+9715 655 5352</span>
 						</li>
 					</ul>
 				</article>
 				{/* col 4 */}
 				<article className='space-y-6'>
-					<h2 className='text-orange-500 font-bold text-xl md:text-2xl'>Newsletter</h2>
+					<h2 className='text-custom-orange font-bold text-xl md:text-2xl'>Newsletter</h2>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vitae a
 						assumenda voluptas maxime ullam.
@@ -101,7 +103,7 @@ const Footer = () => {
 						<button
 							type='submit'
 							className='
-								absolute bg-orange-500 p-2 px-3 z-10 rounded-full font-semibold transition-all duration-300 ease-linear end-0  
+								absolute bg-custom-orange p-2 px-3 z-10 rounded-full font-semibold transition-all duration-300 ease-linear end-0  
 								-top-0.5 hover:-end-1 hover:bg-orange-600'
 						>
 							Subscribe

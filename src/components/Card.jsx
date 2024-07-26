@@ -5,7 +5,7 @@ const Card = ({ photo, name, title, review, styles }) => {
 	return (
 		<article
 			className={`
-				bg-orange-500 text-black space-y-3 w-full px-6 pt-3 pb-12 rounded-sm relative 
+				bg-custom-orange text-black space-y-3 w-full px-6 pt-3 pb-12 rounded-sm relative 
 				top-0 overflow-hidden transition-all duration-300 ease-linear
 				hover:-top-5 md:w-2/5 lg:w-1/3 ${styles}`}
 		>

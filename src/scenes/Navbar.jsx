@@ -40,7 +40,7 @@ const Navbar = () => {
 			<nav
 				className={`
           transition-all duration-300 ease-out fixed top-0 w-1/2 min-w-48 flex flex-col
-          z-20 gap-6 items-center py-20 rounded-l-xl bg-orange-500 text-black 
+          z-20 gap-6 items-center py-20 rounded-l-xl bg-custom-orange text-black 
 					text-sm font-medium lg:hidden [&_a]:transition-all  [&_a]:duration-300 [&_a]:ease-linear
           ${openMenu ? "end-0" : "-end-1/2 opacity-0"}
           `}
@@ -90,8 +90,8 @@ const Navbar = () => {
 			<a
 				href='#'
 				className={`
-					fixed bottom-10 end-10 bg-orange-500 rounded-full
-					transition-all duration-300 ease-linear hover:bg-black [&_*]:hover:fill-orange-500
+					fixed bottom-10 end-10 bg-custom-orange border border-custom-orange rounded-full
+					transition-all duration-300 ease-linear hover:bg-black [&_*]:hover:fill-custom-orange
 					${scrollPosition > window.innerHeight ? "" : "hidden"}
 				`}
 			>
