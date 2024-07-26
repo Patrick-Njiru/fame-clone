@@ -27,7 +27,7 @@ const Navbar = () => {
 				transition-colors duration-100 ease-linear
         ${scrollPosition == 0 ? "bg-transparent pt-3 xl:pt-0" : "bg-black"} `}
 		>
-			<a href='#' className='block size-24 mb-2'>
+			<a href='#' className='block size-12 sm:size-24 mb-2'>
 				<img
 					src='/src/assets/official-fame-logo.webp'
 					className='object-cover'
@@ -49,24 +49,45 @@ const Navbar = () => {
 
 			<nav
 				className={`
-          transition-all duration-300 ease-out fixed top-0 w-1/2 flex flex-col
-          z-20 gap-6 items-center py-20 rounded-l-xl bg-teal-500 lg:hidden
-          ${openMenu ? "end-0" : "-end-1/2"}
+          transition-all duration-300 ease-out fixed top-0 w-1/2 min-w-48 flex flex-col
+          z-20 gap-6 items-center py-20 rounded-l-xl bg-orange-500 text-black 
+					text-sm font-medium lg:hidden [&_a]:transition-all  [&_a]:duration-300 [&_a]:ease-linear
+          ${openMenu ? "end-0" : "-end-1/2 opacity-0"}
           `}
 			>
 				<button
-					className='absolute top-5 end-5 text-2xl text-red-600'
+					className='bg-inherit space-y-0.5 me-6 absolute top-5 start-5 lg:hidden'
+					onClick={() => setOpenMenu(!openMenu)}
+				>
+					<span id='line1' className='block h-1 w-5 bg-white'></span>
+					<span id='line2' className='block h-1 w-4 bg-white'></span>
+					<span id='line3' className='block h-1 w-6 bg-white'></span>
+				</button>
+				{/* <button
+					className='absolute top-5 end-5 text-2xl'
 					onClick={() => setOpenMenu(!openMenu)}
 				>
 					X
-				</button>
-				<a href='#'>HOME</a>
-				<a href='#about'>ABOUT US</a>
-				<a href='#catalogue'>CATALOGUE</a>
-				<a href='#blog'>BLOG & NEWS</a>
-				<a href='#contact'>CONTACT US</a>
+				</button> */}
+				<a className='hover:text-base hover:text-white' href='#'>
+					HOME
+				</a>
+				<a className='hover:text-base hover:text-white' href='#about'>
+					ABOUT US
+				</a>
+				<a className='hover:text-base hover:text-white' href='#services'>
+					CATALOGUE
+				</a>
+				<a className='hover:text-base hover:text-white' href='#testimonials'>
+					BLOG & NEWS
+				</a>
+				<a className='hover:text-base hover:text-white' href='#contact'>
+					CONTACT US
+				</a>
 				{/* TODO delete later */}
-				<a href='#footer'>DELETE LATER</a>
+				<a className='hover:text-base hover:text-white' href='#footer'>
+					DELETE LATER
+				</a>
 			</nav>
 
 			<div className='flex gap-1 w-fit bg-inherit relative'>

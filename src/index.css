@@ -16,7 +16,7 @@
 header,
 section,
 footer {
-	@apply px-12;
+	@apply px-5;
 }
 
 .hero {
@@ -42,4 +42,12 @@ footer {
 
 .slick-dots li.slick-active button::before {
 	@apply text-orange-500;
+}
+
+@media screen and (min-width: 640px) {
+	header,
+	section,
+	footer {
+		@apply px-12;
+	}
 }
