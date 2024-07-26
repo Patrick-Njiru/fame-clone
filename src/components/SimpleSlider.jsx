@@ -1,7 +1,9 @@
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
+import PropTypes from "prop-types"
+
+// import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 
 // const CustomPrevArrow = () => (
 // 	<button className='p-1'>
@@ -15,7 +17,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 // 	</button>
 // )
 
-const SimpleSlider = () => {
+const SimpleSlider = ({ children }) => {
 	const settings = {
 		dots: true,
 		infinite: true,
@@ -33,30 +35,11 @@ const SimpleSlider = () => {
 
 	return (
 		<div className='size-1/2 h-96 [&_img]:h-[70vh] relative'>
-			<Slider {...settings}>
-				<img
-					src='https://via.placeholder.com/1024?text=Slider+1'
-					alt='Slide 1'
-					className='object-cover opacity-25'
-				/>
-				<img
-					src='https://via.placeholder.com/1024?text=Slider+2'
-					alt='Slide 2'
-					className='object-cover opacity-50'
-				/>
-				<img
-					src='https://via.placeholder.com/1024?text=Slider+3'
-					alt='Slide 3'
-					className='object-cover opacity-75'
-				/>
-				<img
-					src='https://via.placeholder.com/1024?text=Slider+4'
-					alt='Slide 4'
-					className='object-cover'
-				/>
-			</Slider>
+			<Slider {...settings}>{children}</Slider>
 		</div>
 	)
 }
+
+SimpleSlider.propTypes = { children: PropTypes.any.isRequired }
 
 export default SimpleSlider

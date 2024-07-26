@@ -6,7 +6,6 @@ const App = () => {
 			<Navbar />
 			<Hero />
 			<About />
-			<Models />
 			<Service />
 			<Testimonials />
 			<Contact />
