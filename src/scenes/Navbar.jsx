@@ -43,9 +43,11 @@ const Navbar = () => {
 			<nav className='ms-60 w-1/2 gap-3 hidden justify-evenly bg-inherit [&_*]:font-medium lg:flex'>
 				<a href='#'>HOME</a>
 				<a href='#about'>ABOUT US</a>
-				<a href='#catalogue'>CATALOGUE</a>
-				<a href='#blog'>BLOG & NEWS</a>
+				<a href='#services'>CATALOGUE</a>
+				<a href='#testimonials'>BLOG & NEWS</a>
 				<a href='#contact'>CONTACT US</a>
+				{/* TODO delete later */}
+				<a href='#footer'>DELETE LATER</a>
 			</nav>
 
 			{/* Mobile */}
@@ -68,6 +70,8 @@ const Navbar = () => {
 				<a href='#catalogue'>CATALOGUE</a>
 				<a href='#blog'>BLOG & NEWS</a>
 				<a href='#contact'>CONTACT US</a>
+				{/* TODO delete later */}
+				<a href='#footer'>DELETE LATER</a>
 			</nav>
 
 			<div className='flex gap-1 w-fit bg-inherit relative'>

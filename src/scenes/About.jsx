@@ -2,7 +2,7 @@ import { Button, Models, SectionTitle, SimpleSlider } from "../components"
 
 const About = () => {
 	return (
-		<section className='my-40'>
+		<section id='about' className='my-40'>
 			<div className='flex justify-between gap-20'>
 				<div className='flex flex-col justify-between space-y-10 w-1/2'>
 					<SectionTitle

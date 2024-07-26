@@ -3,6 +3,7 @@ import { SectionTitle } from "../components"
 const Service = () => {
 	return (
 		<section
+			id='services'
 			className='py-40 bg-orange-500 relative'
 			style={
 				{
