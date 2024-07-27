@@ -8,8 +8,8 @@ const SectionTitle = ({ title, description, centered = true, otherStyles, childr
 				${centered && "text-center"} ${otherStyles}
 			`}
 		>
-			<p className='font-light md:text-lg'>{title}</p>
-			<h2 className='font-bold text-3xl md:text-4xl'>{description}</h2>
+			<p className='font-light text-base md:text-lg'>{title}</p>
+			<h2 className='font-bold text-xl sm:text-3xl md:text-4xl'>{description}</h2>
 			{children}
 		</div>
 	)

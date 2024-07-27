@@ -34,7 +34,7 @@ const Hero = () => {
 				pt-32 pb-12 sm:pt-24 md:pt-36 lg:pt-40 xl:pt-60'
 		>
 			<div className='bg-transparent space-y-2 mb-6 sm:block md:space-y-5 md:mb-0'>
-				<h1 className='font-semibold leading-loose justify-between text-xl md:text-3xl md:w-4/5 lg:text-4xl lg:w-1/2 xl:w-full'>
+				<h1 className='font-bold leading-loose justify-between text-xl sm:text-3xl md:w-4/5 lg:text-4xl lg:font-black lg:w-3/5'>
 					Welcome to FAME, Where Luxury Meets UAE&apos;s Roads!
 				</h1>
 				<p className='text-sm hidden sm:block'>
