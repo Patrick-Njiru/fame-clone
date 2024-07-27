@@ -77,7 +77,7 @@ const Navbar = () => {
           transition-all duration-300 ease-in [&_*]:transition-all [&_*]:duration-300 [&_*]:ease-in 
 					fixed top-0 w-1/3 min-w-48 flex flex-col z-20 gap-6 items-center py-20 rounded-br-xl 
 					bg-custom-orange text-black text-sm font-medium lg:hidden
-          ${openMenu ? "start-0" : "-start-1/2 opacity-0"}
+          ${openMenu ? "start-0" : "-start-1/2 opacity-0 invisible"}
         `}
 			>
 				<button
@@ -148,12 +148,12 @@ const Navbar = () => {
 				className={`
 					transition-all duration-300 ease-in [&_*]:transition-all [&_*]:duration-300 [&_*]:ease-in 
 					fixed end-0 z-40 top-16 bottom-0 bg-white w-60 flex justify-center items-center
-					${openCart ? "opacity-100 h-full" : "opacity-0 h-0"}
+					${openCart ? "opacity-100 h-full" : "opacity-0 h-0 invisible"}
 				`}
 			>
 				<button
 					type='button'
-					className='absolute top-0 start-0 text-black text-xl m-3 	hover:text-custom-orange'
+					className='absolute top-0 start-0 text-black text-xl m-3	hover:text-custom-orange'
 					onClick={() => setOpenCart(!openCart)}
 					title='Close cart'
 				>

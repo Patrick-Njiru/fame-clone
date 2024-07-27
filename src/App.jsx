@@ -6,7 +6,7 @@ const App = () => {
 		<main className='overflow-hidden bg-black bg-opacity-60 text-white pt-0'>
 			<div className='bg-black'>
 				<video
-					className='absolute size-full h-[130vh] -top-28 start-0 -z-20 object-cover'
+					className='absolute size-full h-[130vh] -top-28 start-0 -z-20 object-cover hidden md:block'
 					autoPlay
 					loop
 					muted

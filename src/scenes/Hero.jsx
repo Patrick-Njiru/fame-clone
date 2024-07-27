@@ -31,23 +31,23 @@ const Hero = () => {
 		<section
 			className='
 				h-screen bg-transparent hero flex flex-col justify-between relative overflow-hidden
-				pt-32 pb-12 md:pt-36 lg:pt-40 xl:pt-60'
+				pt-32 pb-12 sm:pt-24 md:pt-36 lg:pt-40 xl:pt-60'
 		>
-			<div className='space-y-5 bg-transparent hidden md:block'>
-				<h1 className='font-semibold text-2xl leading-loose w-4/5 lg:w-1/2 justify-between md:text-3xl lg:text-4xl xl:w-full'>
+			<div className='bg-transparent space-y-2 mb-6 sm:block md:space-y-5 md:mb-0'>
+				<h1 className='font-semibold leading-loose justify-between text-xl md:text-3xl md:w-4/5 lg:text-4xl lg:w-1/2 xl:w-full'>
 					Welcome to FAME, Where Luxury Meets UAE&apos;s Roads!
 				</h1>
-				<p className='text-sm'>
+				<p className='text-sm hidden sm:block'>
 					Rent a super car from our fleet and make your driving dreams come true
 				</p>
 			</div>
 			<form
 				onSubmit={(e) => e.preventDefault()}
 				className='
-					flex flex-wrap justify-evenly gap-3 gap-y-6 w-full [&_div]:w-full [&_*]:outline-none
-					[&_div]:border [&_div]:border-e-0 [&_div]:py-4 [&_div]:rounded-lg [&_div]:ps-2 md:[&_div]:w-[45%] 
-					md:mt-12 lg:justify-between lg:[&_div]:w-[22%] lg:[&_div]:border-0 lg:[&_div]:ps-0 lg:[&_div]:border-b 
-					lg:[&_div]:rounded-none'
+					flex flex-wrap justify-between gap-3 gap-y-4 w-full [&_div]:w-full [&_*]:outline-none
+					[&_div]:border [&_div]:border-e-0 [&_div]:py-[10px] [&_div]:text-sm [&_div]:rounded-lg [&_div]:ps-2 
+					md:[&_div]:py-4 md:[&_div]:text-base md:[&_div]:w-[45%] md:mt-12 lg:justify-between lg:[&_div]:w-[22%] 
+					lg:[&_div]:border-0 lg:[&_div]:ps-0 lg:[&_div]:border-b lg:[&_div]:rounded-none'
 			>
 				<div className='[&_*]:bg-transparent border-b pb-2 w-60'>
 					<select
@@ -106,7 +106,11 @@ const Hero = () => {
 					/>
 				</div>
 
-				<button type='submit' className='md:w-40 lg:w-fit'>
+				<button
+					type='submit'
+					className='flex justify-center w-full lg:w-fit lg:inline [&_*]:hover:fill-custom-orange'
+					title='Search'
+				>
 					<BiSearch className='size-8 mx-auto' />
 				</button>
 			</form>
