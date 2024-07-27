@@ -24,10 +24,15 @@ const Navbar = () => {
 				transition-colors duration-100 ease-linear
         ${scrollPosition == 0 ? "bg-transparent pt-3 xl:pt-0" : "bg-black"} `}
 		>
-			<a href='#' className='block size-12 sm:size-24 mb-2'>
+			<a
+				href='#'
+				className='
+					block size-12 md:size-24 mb-2 hover:opacity-80 hover:scale-90
+					transition-all duration-300 ease-linear'
+			>
 				<img src={logo} className='object-cover' alt='logo' />
 			</a>
-			{/* Desktop */}
+			{/* Desktop Menu */}
 			<nav
 				className='
 					ms-60 w-1/2 gap-3 hidden justify-evenly bg-inherit 
@@ -65,24 +70,23 @@ const Navbar = () => {
 				</a>
 			</nav>
 
-			{/* Mobile */}
-
+			{/* Mobile Menu */}
 			<nav
+				id='mobile-menu'
 				className={`
-          transition-all duration-300 ease-out fixed top-0 w-1/2 min-w-48 flex flex-col
-          z-20 gap-6 items-center py-20 rounded-l-xl bg-custom-orange text-black 
-					text-sm font-medium lg:hidden [&_a]:transition-all  [&_a]:duration-300 [&_a]:ease-linear
-          ${openMenu ? "end-0" : "-end-1/2 opacity-0"}
-          `}
+          transition-all duration-300 ease-in [&_*]:transition-all [&_*]:duration-300 [&_*]:ease-in 
+					fixed top-0 w-1/3 min-w-48 flex flex-col z-20 gap-6 items-center py-20 rounded-br-xl 
+					bg-custom-orange text-black text-sm font-medium lg:hidden
+          ${openMenu ? "start-0" : "-start-1/2 opacity-0"}
+        `}
 			>
 				<button
 					type='button'
-					className='bg-inherit space-y-0.5 me-6 absolute top-5 start-5 lg:hidden'
+					className='bg-inherit space-y-0.5 me-6 absolute top-4 end-0 text-xl hover:text-white'
 					onClick={() => setOpenMenu(!openMenu)}
+					title='Close menu'
 				>
-					<span id='line1' className='block h-1 w-5 bg-white'></span>
-					<span id='line2' className='block h-1 w-4 bg-white'></span>
-					<span id='line3' className='block h-1 w-6 bg-white'></span>
+					X
 				</button>
 				<a className='hover:text-base hover:text-white' href='#'>
 					HOME
@@ -102,17 +106,26 @@ const Navbar = () => {
 			</nav>
 
 			<div className='flex gap-1 w-fit bg-inherit relative'>
+				{/* Hamburger Menu Btn */}
 				<button
 					type='button'
-					className='bg-inherit space-y-0.5 me-6 lg:hidden'
+					className='
+						bg-inherit space-y-0.5 me-6 transition-all duration-300 ease-linear 
+						hover:opacity-80 hover:scale-90 lg:hidden'
 					onClick={() => setOpenMenu(!openMenu)}
+					title={`${openMenu ? "Close menu" : "Open menu"}`}
 				>
 					<span id='line1' className='block h-1 w-5 bg-white'></span>
 					<span id='line2' className='block h-1 w-4 bg-white'></span>
 					<span id='line3' className='block h-1 w-6 bg-white'></span>
 				</button>
+
 				<span>$0.00</span>
-				<div className='cursor-pointer' onClick={() => setOpenCart(!openCart)}>
+				<div
+					className='cursor-pointer transition-all duration-300 ease-linear hover:opacity-80 hover:scale-90'
+					onClick={() => setOpenCart(!openCart)}
+					title='Open cart'
+				>
 					<FaCartArrowDown className='size-5' />
 					<span className='text-sm -block size-4 flex justify-center items-center bg-custom-orange rounded-full absolute -end-1 -top-2'>
 						0
@@ -130,16 +143,19 @@ const Navbar = () => {
 				<FaArrowUp className='text-xl fill-black m-3' />
 			</a>
 
+			{/* Cart Modal */}
 			<article
 				className={`
-					transition-all duration-300 ease-in fixed end-0 z-40 top-8 bottom-0   bg-white 
-					flex justify-center items-center	${openCart ? "w-60 opacity-100" : "opacity-0 w-0"}
+					transition-all duration-300 ease-in [&_*]:transition-all [&_*]:duration-300 [&_*]:ease-in 
+					fixed end-0 z-40 top-16 bottom-0 bg-white w-60 flex justify-center items-center
+					${openCart ? "opacity-100 h-full" : "opacity-0 h-0"}
 				`}
 			>
 				<button
 					type='button'
-					className=' absolute top-0 start-0 text-black text-xl m-3 hover:text-custom-orange'
+					className='absolute top-0 start-0 text-black text-xl m-3 	hover:text-custom-orange'
 					onClick={() => setOpenCart(!openCart)}
+					title='Close cart'
 				>
 					X
 				</button>

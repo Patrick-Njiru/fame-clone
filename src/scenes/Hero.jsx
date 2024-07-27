@@ -18,19 +18,23 @@ const Hero = () => {
 			? setPickUpDate(
 					`
 					${e.target.value.slice(0, 10)} @${time12["time"]}:${e.target.value.slice(14, 16)}${time12["am/pm"]}
-						` || "Pick-up Date"
+						` || "Pick-up date"
 			  )
 			: setDropOffDate(
 					`
 					${e.target.value.slice(0, 10)} @${time12["time"]}:${e.target.value.slice(14, 16)}${time12["am/pm"]}
-					` || "Pick-up Date"
+					` || "Pick-up date"
 			  )
 	}
 
 	return (
-		<section className='h-screen pt-40 bg-transparent pb-12 hero flex flex-col justify-between relative overflow-hidden'>
+		<section
+			className='
+				h-screen bg-transparent hero flex flex-col justify-between relative overflow-hidden
+				pt-32 pb-12 md:pt-36 lg:pt-40 xl:pt-60'
+		>
 			<div className='space-y-5 bg-transparent hidden md:block'>
-				<h1 className='font-semibold text-2xl leading-loose w-4/5 lg:w-1/2 justify-between md:text-3xl lg:text-4xl'>
+				<h1 className='font-semibold text-2xl leading-loose w-4/5 lg:w-1/2 justify-between md:text-3xl lg:text-4xl xl:w-full'>
 					Welcome to FAME, Where Luxury Meets UAE&apos;s Roads!
 				</h1>
 				<p className='text-sm'>
@@ -41,15 +45,16 @@ const Hero = () => {
 				onSubmit={(e) => e.preventDefault()}
 				className='
 					flex flex-wrap justify-evenly gap-3 gap-y-6 w-full [&_div]:w-full [&_*]:outline-none
-					[&_div]:border [&_div]:border-e-0 [&_div]:py-4 [&_div]:rounded-lg [&_div]:ps-2 md:[&_div]:w-[45%] md:mt-12
-					lg:justify-between lg:[&_div]:w-[22%] lg:[&_div]:border-0 lg:[&_div]:ps-0 lg:[&_div]:border-b lg:[&_div]:rounded-none'
+					[&_div]:border [&_div]:border-e-0 [&_div]:py-4 [&_div]:rounded-lg [&_div]:ps-2 md:[&_div]:w-[45%] 
+					md:mt-12 lg:justify-between lg:[&_div]:w-[22%] lg:[&_div]:border-0 lg:[&_div]:ps-0 lg:[&_div]:border-b 
+					lg:[&_div]:rounded-none'
 			>
 				<div className='[&_*]:bg-transparent border-b pb-2 w-60'>
 					<select
 						name='pick-up_location'
 						className='[&_*]:bg-white [&_*]:text-black w-full'
 					>
-						<option value='pick-up_location'>Pick-up Location</option>
+						<option value='pick-up_location'>Pick-up location</option>
 						<option value=''>Houston</option>
 						<option value=''>San Diego</option>
 						<option value=''>San Antonio</option>
@@ -62,7 +67,7 @@ const Hero = () => {
 						name='drop-off_location'
 						className='[&_*]:bg-white [&_*]:text-black w-full'
 					>
-						<option value='drop_off_location'>Drop-off Location</option>
+						<option value='drop_off_location'>Drop-off location</option>
 						<option value=''>Houston</option>
 						<option value=''>San Diego</option>
 						<option value=''>San Antonio</option>

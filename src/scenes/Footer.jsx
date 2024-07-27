@@ -6,10 +6,17 @@ import { logo } from "../assets"
 const Footer = () => {
 	return (
 		<footer id='footer' className='pt-20 pb-12 font-medium space-y-12 bg-black'>
-			<div className='flex flex-col flex-wrap justify-between gap-y-16 gap-10 md:flex-row md:[&_article]:w-2/5 lg:flex-nowrap lg:gap-10 lg:[&_article]:w-1/4'>
+			<div
+				className='
+					flex flex-col flex-wrap justify-between gap-y-16 gap-10
+					md:flex-row md:[&_article]:w-2/5 lg:flex-nowrap lg:gap-10 lg:[&_article]:w-1/4'
+			>
 				{/* col 1 */}
 				<article className='space-y-6'>
-					<a href='#' className='block size-24'>
+					<a
+						href='#'
+						className='block size-24 hover:opacity-80 hover:scale-90 transition-all duration-300 ease-linear'
+					>
 						<img src={logo} alt='logo' className='object-cover' />
 					</a>
 					<p>
@@ -37,7 +44,7 @@ const Footer = () => {
 								rounded-full size-8 flex items-center justify-center'
 							title='instagram'
 						>
-							<BiLogoInstagram className="fill-black" />
+							<BiLogoInstagram className='fill-black' />
 						</a>
 						<a
 							href='#tiktok'
@@ -136,7 +143,7 @@ const Footer = () => {
 							type='submit'
 							className='
 								absolute bg-custom-orange p-2 px-3 z-10 rounded-full font-semibold transition-all duration-300 ease-linear end-0  
-								-top-0.5 hover:-end-1 hover:bg-orange-600'
+								hover:-end-1 hover:bg-orange-600'
 						>
 							Subscribe
 						</button>

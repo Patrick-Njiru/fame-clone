@@ -50,6 +50,7 @@ footer {
 	@apply text-custom-orange;
 }
 
+/* Media Queries */
 @media screen and (min-width: 640px) {
 	header,
 	section,
@@ -62,5 +63,12 @@ footer {
 	p,
 	a {
 		@apply text-base;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	p,
+	a {
+		@apply text-xl;
 	}
 }

@@ -9,10 +9,10 @@ const Card = ({ photo, name, title, review, styles }) => {
 				top-0 overflow-hidden transition-all duration-300 ease-linear
 				hover:-top-5 md:w-2/5 lg:w-1/3 ${styles}`}
 		>
-			<div className='absolute size-32 bg-black rounded-full flex items-end justify-start p-6 -end-12 -top-12'>
-				<BiSolidQuoteAltRight className='fill-white text-5xl' />
+			<div className='absolute bg-black rounded-full flex items-end justify-start p-6 -end-6 -top-6'>
+				<BiSolidQuoteAltRight className='fill-white text-3xl lg:text-5xl' />
 			</div>
-			<div className='flex justify-start gap-6 items-center'>
+			<div className='flex justify-start gap-2 sm:gap-6 items-center'>
 				<div className='size-16 rounded-full sm:size-20 overflow-hidden'>
 					<img src={photo} alt='reviewer pic' className='object-cover' />
 				</div>
